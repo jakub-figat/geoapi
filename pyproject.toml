@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "geoapi"
+version = "1.0.0"
+description = "Application for saving geolocation based on IP address"
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+Django = "^3.2.9"
+djangorestframework = "^3.12.4"
+requests = "^2.26.0"
+python-decouple = "^3.5"
+django-split-settings = "^1.1.0"
+psycopg2 = "^2.9.2"
+
+[tool.poetry.dev-dependencies]
+drf-yasg = "^1.20.0"
+isort = "^5.10.1"
+black = "^21.12b0"
+
+[tool.black]
+line-length=119
+
+[tool.isort]
+line_length = 119
+profile = "black"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
