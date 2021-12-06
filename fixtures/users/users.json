@@ -1,9 +1,10 @@
 [
   {
+    "model": "auth.user",
     "pk": 1,
     "fields": {
       "username": "geoapi_user",
-      "password": "xd"
+      "password": "pbkdf2_sha256$260000$XhReqRhR7RZ4VXOb6Dtjio$cEUhe/VsWYbTDynCMDQ2RfsoDyaPMdj6sfM+QQjajUk="
     }
   }
 ]

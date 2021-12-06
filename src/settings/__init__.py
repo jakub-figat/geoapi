@@ -6,6 +6,7 @@ ENV = config("ENV", default="dev")
 base_settings = [
     "common.py",
     "geoapi.py",
+    "drf.py",
     f"{ENV}.py",
 ]
 
