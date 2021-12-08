@@ -1,0 +1,28 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres:13.4
+    container_name: geopai_postgres
+    restart: always
+    env_file: config/.env
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  backend:
+    build:
+      context: .
+      dockerfile: docker/django/Dockerfile
+      args:
+        ENV: prod
+    command: gunicorn src.wsgi:application --bind=0.0.0.0:8000 --workers=4 --chdir="/app"
+    container_name: geoapi_backend
+    restart: always
+    env_file: config/.env
+    ports:
+      - 80:8000
+    depends_on:
+      - db
+
+volumes:
+  postgres_data:
