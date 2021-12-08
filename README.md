@@ -54,4 +54,4 @@ Optionally with `location` param:
 `$ make test location=tests.test_apps.test_geoapi`
 
 ## Live
-API can be accessed at <aws_url>
+API can be accessed at ec2-52-57-194-238.eu-central-1.compute.amazonaws.com/api
