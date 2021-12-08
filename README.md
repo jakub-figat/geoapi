@@ -46,5 +46,12 @@ Example user:
 ## Makefile
 Project has `Makefile` with useful command aliases
 
+## Tests
+`$ make test`
+
+Optionally with `location` param:
+
+`$ make test location=tests.test_apps.test_geoapi`
+
 ## Live
 API can be accessed at <aws_url>
