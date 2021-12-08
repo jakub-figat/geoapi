@@ -15,6 +15,7 @@ psycopg2 = "^2.9.2"
 django-extensions = "^3.1.5"
 ipython = "^7.30.1"
 djangorestframework-simplejwt = "^5.0.0"
+dacite = "^1.6.0"
 
 [tool.poetry.dev-dependencies]
 drf-yasg = "^1.20.0"

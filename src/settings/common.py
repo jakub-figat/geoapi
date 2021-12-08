@@ -24,11 +24,12 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "src.apps.user",
+    "src.apps.geoapi",
     "django_extensions",
     "rest_framework",
     "rest_framework_simplejwt",
-    "src.apps.user",
-    "src.apps.geoapi",
+    "drf_yasg",
 ]
 
 MIDDLEWARE = [

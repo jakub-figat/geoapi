@@ -7,6 +7,7 @@ base_settings = [
     "common.py",
     "geoapi.py",
     "drf.py",
+    "swagger.py",
     f"{ENV}.py",
 ]
 

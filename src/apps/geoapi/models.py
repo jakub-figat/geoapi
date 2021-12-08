@@ -1,7 +1,11 @@
+from django.contrib.auth.models import User
 from django.db import models
+
+from src.apps.geoapi.managers import IPAddressQuerySet
 
 
 class IPAddress(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="ip_addresses")
     ip = models.GenericIPAddressField()
     type = models.CharField(max_length=8)
     continent_code = models.CharField(max_length=10)
@@ -13,6 +17,8 @@ class IPAddress(models.Model):
     zip = models.CharField(max_length=30)
     latitude = models.FloatField()
     longitude = models.FloatField()
+
+    objects = IPAddressQuerySet.as_manager()
 
 
 class IPAddressLocation(models.Model):
