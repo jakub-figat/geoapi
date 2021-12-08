@@ -3,7 +3,7 @@ from rest_framework.routers import DefaultRouter
 from src.apps.geoapi.views import IPAddressViewSet
 
 router = DefaultRouter()
-router.register("ip-addresses", IPAddressViewSet, basename="ip_address")
+router.register("ip-addresses", IPAddressViewSet, basename="ip-address")
 
 app_name = "geoapi"
 

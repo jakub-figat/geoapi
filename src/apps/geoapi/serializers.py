@@ -24,7 +24,6 @@ class IPAddressLocationOutputSerializer(serializers.ModelSerializer):
     class Meta:
         model = IPAddressLocation
         fields = (
-            "ip_address",
             "geoname_id",
             "capital",
             "country_flag",
