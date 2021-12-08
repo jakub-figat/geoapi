@@ -21,7 +21,7 @@ RUN apt-get update -q && apt-get install -yq netcat
 COPY ./pyproject.toml ./poetry.lock ./
 RUN pip install poetry==$POETRY_VERSION
 
-RUN poetry install $(if ["$ENV" == "prod"]; then echo "--no-dev"; fi) --no-ansi --no-interaction
+RUN poetry install $(if ["$ENV" = 'prod']; then echo "--no-dev"; fi) --no-ansi --no-interaction
 
 COPY ./scripts/wait_for_db.sh /wait_for_db.sh
 
