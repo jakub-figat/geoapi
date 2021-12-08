@@ -1,6 +1,6 @@
 # GeoAPI
 
-- ###Django based app used to retrieve geolocation data based on given IP address.
+- ### Django based app used to retrieve geolocation data based on given IP address.
 - ### Allows retrieving, creating and deleting geolocation data
 - ### Secured with JWT
 
