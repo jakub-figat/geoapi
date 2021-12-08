@@ -43,6 +43,7 @@ class IPAddressOutputSerializer(serializers.ModelSerializer):
     class Meta:
         model = IPAddress
         fields = (
+            "id",
             "ip",
             "type",
             "continent_code",

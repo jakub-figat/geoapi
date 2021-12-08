@@ -21,6 +21,7 @@ dacite = "^1.6.0"
 drf-yasg = "^1.20.0"
 isort = "^5.10.1"
 black = "^21.12b0"
+requests-mock = "^1.9.3"
 
 [tool.black]
 line-length=119
