@@ -41,7 +41,7 @@ Example user:
 
 `$ make load-fixtures`
 
-6. Go to `http://localhost:8000/api/swagger` to see SwaggerUI docs.
+6. Go to `http://localhost:8000/api/swagger` to see SwaggerUI docs (available only on development environment).
 
 ## Makefile
 Project has `Makefile` with useful command aliases
@@ -54,4 +54,4 @@ Optionally with `location` param:
 `$ make test location=tests.test_apps.test_geoapi`
 
 ## Live
-API can be accessed at ec2-52-57-194-238.eu-central-1.compute.amazonaws.com/api
+API can be accessed at http://ec2-52-57-194-238.eu-central-1.compute.amazonaws.com/api
